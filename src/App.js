@@ -1,9 +1,10 @@
 import './App.css';
+import { Main } from './frontend/components';
 
 function App() {
   return (
     <div className="App">
-      <h1>Objective Star</h1>
+      <Main />
     </div>
   );
 }
