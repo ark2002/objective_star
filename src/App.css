@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root{
+  --primary-font-family: 'Play', sans-serif;
+  --secondary-font-family: 'Montserrat', sans-serif;
+  --background-color-light: #FAF9F6;
+  --text-color-light1: #000;
+  --text-color-light2: #a3a3a3;
+  --accent-color-positive: #3AD700;
+  --accent-color-negative: #FF0000;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -20,4 +34,16 @@ p,
 input {
   padding: 0;
   margin: 0;
+}
+
+.flex__column-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex__row-center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
