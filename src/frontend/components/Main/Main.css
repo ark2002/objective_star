@@ -1,0 +1,36 @@
+.main__container {
+    width: 35rem;
+    margin: auto auto;
+    padding: 1rem;
+    font-family: var(--secondary-font-family);
+    background-color: var(--background-color-light);
+}
+
+.main__title {
+    font-family: var(--primary-font-family);
+    font-size: 4rem;
+}
+
+.input__container {
+    width: 90%;
+    margin: 1rem 0;
+    border: 1px solid var(--text-color-light2);
+    border-radius: 0.5rem;
+}
+
+.input__icon {
+    padding: 0.5rem;
+    color: var(--text-color-light2);
+}
+
+.input__box {
+    outline: none;
+    border: none;
+    font-family: var(--secondary-font-family);
+    padding: 0.5rem 1rem;
+    width: 100%
+}
+
+.input__box:focus+.input__icon {
+    color: var(--text-color-light1);
+}
