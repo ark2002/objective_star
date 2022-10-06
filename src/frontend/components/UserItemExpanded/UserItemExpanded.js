@@ -1,8 +1,11 @@
 import moment from "moment";
+import { useCelebrity } from "../../context/CelebrityContext";
 import "./UserItemExpanded.css";
 
 const UserItemExpanded = ({ star, setIsOpen }) => {
   const { first, last, picture, gender, dob, country, description } = star;
+  const { dispatchList } = useCelebrity();
+
   return (
     <div className="flex__column-center user-expanded__container">
       <div
@@ -35,7 +38,14 @@ const UserItemExpanded = ({ star, setIsOpen }) => {
         <p className="user__description">{description}</p>
       </div>
       <div className="flex__row-center user__options">
-        <span className="material-icons delete__icon">delete</span>
+        <span
+          className="material-icons delete__icon"
+          onClick={() =>
+            dispatchList({ type: "deleteCelebrity", payload: star })
+          }
+        >
+          delete
+        </span>
         <span className="material-icons edit__icon">edit</span>
       </div>
     </div>
