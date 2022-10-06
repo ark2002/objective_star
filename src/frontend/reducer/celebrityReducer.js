@@ -15,12 +15,10 @@ export const celebrityReducer = (state, action) => {
         }),
       };
     case "deleteCelebrity":
-      return { ...state, deleteList: [...state.deleteList, payload] };
-    case "filter":
       return {
         ...state,
         celebrityList: state.celebrityList.filter(
-          (user) => state.deleteList.indexOf(user) === -1
+          (user) => user.id !== payload
         ),
       };
     case "edit":
@@ -28,6 +26,13 @@ export const celebrityReducer = (state, action) => {
         ...state,
         celebrityList: state.celebrityList.map((user) =>
           user.id === payload.id ? { ...payload } : user
+        ),
+      };
+    case "search":
+      return {
+        ...state,
+        FilterList: state.celebrityList.filter((user) =>
+          user.fullName.toLowerCase().includes(payload.toLowerCase())
         ),
       };
     default:

@@ -33,7 +33,7 @@ const DeleteModal = ({ modal, setModal, star }) => {
               <button
                 className="modal__btn delete__btn"
                 onClick={() => {
-                  dispatchList({ type: "deleteCelebrity", payload: star });
+                  dispatchList({ type: "deleteCelebrity", payload: star.id });
                   toast.error("User Deleted");
                 }}
               >

@@ -1,21 +1,15 @@
-import { useEffect, useState } from "react";
-import { useCelebrity } from "../../context/CelebrityContext";
+import { useState } from "react";
 import { UserItem } from "../UserItem/UserItem";
 import "./CelebrityList.css";
 
-const CelebrityList = () => {
-  const { list, dispatchList } = useCelebrity();
+const CelebrityList = ({ filteredList }) => {
   const [isOpen, setIsOpen] = useState(null);
   const [edit, setEdit] = useState(false);
 
-  useEffect(() => {
-    dispatchList({ type: "filter" });
-  }, [dispatchList, list.deleteList]);
-
   return (
     <>
-      {list &&
-        list.celebrityList.map((star) => (
+      {filteredList.length > 0 ? (
+        filteredList.map((star) => (
           <UserItem
             key={star.id}
             star={star}
@@ -24,7 +18,10 @@ const CelebrityList = () => {
             edit={edit}
             setEdit={setEdit}
           />
-        ))}
+        ))
+      ) : (
+        <h3>No User Found :(</h3>
+      )}
     </>
   );
 };

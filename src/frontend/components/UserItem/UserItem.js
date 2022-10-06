@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { UserItemCollapsed } from "../UserItemCollapsed/UserItemCollapsed";
 import { UserItemExpanded } from "../UserItemExpanded/UserItemExpanded";
 import "./UserItem.css";
