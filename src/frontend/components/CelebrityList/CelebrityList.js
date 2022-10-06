@@ -6,6 +6,7 @@ import "./CelebrityList.css";
 const CelebrityList = () => {
   const { list, dispatchList } = useCelebrity();
   const [isOpen, setIsOpen] = useState(null);
+  const [edit, setEdit] = useState(false);
 
   useEffect(() => {
     dispatchList({ type: "filter" });
@@ -20,6 +21,8 @@ const CelebrityList = () => {
             star={star}
             isOpen={isOpen}
             setIsOpen={setIsOpen}
+            edit={edit}
+            setEdit={setEdit}
           />
         ))}
     </>
