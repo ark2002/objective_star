@@ -4,14 +4,14 @@ import { UserItem } from "../UserItem/UserItem";
 import "./CelebrityList.css";
 
 const CelebrityList = () => {
-  const [list, SetList] = useState([]);
+  const [list, setList] = useState([]);
   const [isOpen, setIsOpen] = useState(null);
 
   useEffect(() => {
     (async () => {
       const { data } = await axios.get("celebrities.json");
       console.log(data);
-      SetList(data);
+      setList(data);
     })();
   }, []);
 
