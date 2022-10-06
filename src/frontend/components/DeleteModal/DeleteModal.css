@@ -1,0 +1,59 @@
+.delete__modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #9e9e9e7e;
+}
+
+.delete__modal {
+    width: 30rem;
+    padding: 1rem 2rem;
+    gap: 3rem;
+    background-color: var(--background-color-light);
+    box-shadow: #0000003d 0px 3px 8px;
+}
+
+.modal__top {
+    width: 100%;
+}
+
+.close__icon {
+    margin-left: auto;
+    color: var(--text-color-light2);
+}
+
+.modal__choice {
+    gap: 1rem;
+    width: 100%;
+}
+
+.modal__btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.cancel__btn {
+    margin-left: auto;
+    border: 1px solid var(--text-color-light2);
+}
+
+.delete__btn {
+    border: 1px solid var(--accent-color-negative);
+    background-color: var(--accent-color-negative);
+    color: var(--background-color-light);
+}
+
+.modal__btn:hover {
+    box-shadow: #0000003d 0px 3px 8px;
+}
+
+.close__icon:hover {
+    color: var(--text-color-light1);
+    cursor: pointer;
+}
