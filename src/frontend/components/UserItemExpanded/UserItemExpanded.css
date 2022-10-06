@@ -1,0 +1,66 @@
+.user-expanded__container {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--text-color-light2);
+    border-radius: 0.5rem;
+    box-shadow: #0000003d 0px 3px 8px;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+.user__top {
+    width: 100%;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.user__top:hover .collapsed__icon {
+    color: var(--text-color-light1);
+    cursor: pointer;
+}
+
+.user__middle {
+    width: 100%;
+    gap: 2rem;
+}
+
+.user__label {
+    padding-bottom: 0.5rem;
+}
+
+.user__details {
+    width: 8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.user__bottom {
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.user__description {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.user__options {
+    width: 100%;
+}
+
+.collapsed__icon {
+    color: var(--text-color-light2);
+    margin-left: auto;
+}
+
+.delete__icon {
+    margin-left: auto;
+    padding: 0 1rem 1rem 1rem;
+    color: var(--accent-color-negative);
+    cursor: pointer;
+}
+
+.edit__icon {
+    color: var(--accent-color-neutral);
+    padding: 0 0 1rem 0;
+    cursor: pointer;
+}
