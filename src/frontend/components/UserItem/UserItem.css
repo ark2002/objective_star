@@ -2,36 +2,3 @@
     width: 90%;
 }
 
-.user-collapsed__container {
-    padding: 0.5rem 1rem;
-    gap: 2rem;
-    cursor: pointer;
-    border: 1px solid var(--text-color-light2);
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-}
-
-.user__img {
-    width: 4rem;
-    border-radius: 50%;
-    border: 1px solid var(--text-color-light2);
-}
-
-.user__name {
-    gap: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.expand__icon {
-    margin-left: auto;
-    color: var(--text-color-light2);
-}
-
-.user-collapsed__container:hover .expand__icon {
-    color: var(--text-color-light1);
-}
-
-.user-collapsed__container:hover {
-    box-shadow: #0000003d 0px 3px 8px;
-}
