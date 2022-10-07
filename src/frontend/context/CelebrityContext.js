@@ -7,7 +7,6 @@ const CelebrityContext = createContext();
 const CelebrityProvider = ({ children }) => {
   const [list, dispatchList] = useReducer(celebrityReducer, {
     celebrityList: [],
-    FilterList: [],
   });
 
   useEffect(() => {

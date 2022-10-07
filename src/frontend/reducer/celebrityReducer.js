@@ -28,13 +28,6 @@ export const celebrityReducer = (state, action) => {
           user.id === payload.id ? { ...payload } : user
         ),
       };
-    case "search":
-      return {
-        ...state,
-        FilterList: state.celebrityList.filter((user) =>
-          user.fullName.toLowerCase().includes(payload.toLowerCase())
-        ),
-      };
     default:
       return state;
   }
